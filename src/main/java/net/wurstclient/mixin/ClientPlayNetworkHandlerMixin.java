@@ -7,6 +7,7 @@
  */
 package net.wurstclient.mixin;
 
+import net.minecraft.sound.SoundEvent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -399,21 +400,21 @@ public class ClientPlayNetworkHandlerMixin implements ClientPlayPacketListener
 	@Override
 	public void onEquipmentUpdate(EntityEquipmentUpdateS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow
 	@Override
 	public void onExperienceBarUpdate(ExperienceBarUpdateS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow
 	@Override
 	public void onHealthUpdate(HealthUpdateS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow
@@ -448,21 +449,21 @@ public class ClientPlayNetworkHandlerMixin implements ClientPlayPacketListener
 	@Override
 	public void onPlaySound(PlaySoundS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow
 	@Override
 	public void onPlaySoundFromEntity(PlaySoundFromEntityS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow
 	@Override
 	public void onPlaySoundId(PlaySoundIdS2CPacket var1)
 	{
-		
+
 	}
 	
 	@Shadow

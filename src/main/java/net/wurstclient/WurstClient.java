@@ -58,6 +58,7 @@ public enum WurstClient
 	
 	public static final String VERSION = "7.6.2";
 	public static final String MC_VERSION = "1.15.2";
+	public static final String HIPPOGRIFF = "2020.11.1.0";
 	
 	private WurstAnalytics analytics;
 	private EventManager eventManager;

@@ -20,6 +20,7 @@ import net.wurstclient.util.json.WsonObject;
 
 public final class WurstUpdater implements UpdateListener
 {
+	private static final boolean CHECK = false;
 	private Thread thread;
 	private boolean outdated;
 	private Text component;
@@ -126,6 +127,6 @@ public final class WurstUpdater implements UpdateListener
 	
 	public boolean isOutdated()
 	{
-		return outdated;
+		return outdated && CHECK;
 	}
 }

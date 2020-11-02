@@ -12,10 +12,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 
+import net.minecraft.network.packet.s2c.play.PlaySoundFromEntityS2CPacket;
 import net.minecraft.util.crash.CrashException;
 import net.minecraft.util.crash.CrashReport;
 import net.minecraft.util.crash.CrashReportSection;
 import net.wurstclient.WurstClient;
+import net.wurstclient.events.IsPlayerInWaterListener;
 
 public final class EventManager
 {

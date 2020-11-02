@@ -26,8 +26,7 @@ public abstract class ClientConnectionMixin
 	@Inject(at = {@At(value = "INVOKE",
 		target = "Lnet/minecraft/network/ClientConnection;handlePacket(Lnet/minecraft/network/Packet;Lnet/minecraft/network/listener/PacketListener;)V",
 		ordinal = 0)},
-		method = {
-			"channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"},
+		method = {"channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;)V"},
 		cancellable = true)
 	private void onChannelRead0(ChannelHandlerContext channelHandlerContext,
 		Packet<?> packet, CallbackInfo ci)
